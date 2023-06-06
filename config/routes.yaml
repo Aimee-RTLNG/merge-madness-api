@@ -1,4 +1,0 @@
-api_get_data:
-    path: /api/data
-    controller: App\Controller\ApiController::getData
-    methods: [GET]

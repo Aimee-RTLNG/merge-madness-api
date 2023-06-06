@@ -8,7 +8,7 @@ use Symfony\Component\Routing\Annotation\Route;
 class ApiController
 {
     /**
-     * @Route("/api/data", name="api_get_data", methods={"GET"})
+     * @Route("/data", name="api_get_data", methods={"GET"})
      */
     public function getData(): JsonResponse
     {
