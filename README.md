@@ -29,3 +29,8 @@ These commands are provided by Doctrine, an object-relational mapper for PHP:
 - `console doctrine:database:create`: Creates the configured database.
 - `console doctrine:database:drop`: Drops the configured database.
 - `console doctrine:fixtures:load`: Loads database fixtures.
+
+
+## Serveur local et build
+
+- `symfony server:start --port=8080`

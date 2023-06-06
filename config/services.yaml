@@ -28,3 +28,8 @@ services:
 
     # add more service definitions when explicit configuration is needed
     # please note that last definitions always *replace* previous ones
+    Symfony\Component\Serializer\Encoder\JsonEncoder:
+        arguments:
+            - 
+                - 79 # set the desired JSON encoding depth
+                - JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT # set the desired JSON encoding options
