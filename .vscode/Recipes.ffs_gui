@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FreeFileSync XmlType="GUI" XmlFormat="18">
+    <Notes/>
+    <Compare>
+        <Variant>Content</Variant>
+        <Symlinks>Exclude</Symlinks>
+        <IgnoreTimeShift/>
+    </Compare>
+    <Synchronize>
+        <Variant>TwoWay</Variant>
+        <DetectMovedFiles>false</DetectMovedFiles>
+        <DeletionPolicy>RecycleBin</DeletionPolicy>
+        <VersioningFolder Style="Replace"/>
+    </Synchronize>
+    <Filter>
+        <Include>
+            <Item>*</Item>
+        </Include>
+        <Exclude>
+            <Item>\System Volume Information\</Item>
+            <Item>\$Recycle.Bin\</Item>
+            <Item>\RECYCLE?\</Item>
+            <Item>\Recovery\</Item>
+            <Item>*\thumbs.db</Item>
+            <Item>\.git\</Item>
+            <Item>\.vscode\</Item>
+            <Item>*\.gitignore</Item>
+            <Item>*\.env.example</Item>
+            <Item>\var\cache\</Item>
+            <Item>\migrations\</Item>
+            <Item>\var\log\</Item>
+        </Exclude>
+        <SizeMin Unit="None">0</SizeMin>
+        <SizeMax Unit="None">0</SizeMax>
+        <TimeSpan Type="None">0</TimeSpan>
+    </Filter>
+    <FolderPairs>
+        <Pair>
+            <Left>C:\laragon\www\merge-madness-api</Left>
+            <Right>ftp://if0_34354248@ftpupload.net:21/htdocs|pass64=dXZUMUlEaVhVZnFtNDc=</Right>
+        </Pair>
+    </FolderPairs>
+    <Errors Ignore="false" Retry="0" Delay="5"/>
+    <PostSyncCommand Condition="Completion"/>
+    <LogFolder/>
+    <EmailNotification Condition="Always"/>
+    <Gui>
+        <GridViewType>Difference</GridViewType>
+    </Gui>
+</FreeFileSync>
